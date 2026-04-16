@@ -31,7 +31,9 @@ td{padding:7px 9px;border:1px solid #e5e7eb;vertical-align:top}
 tr:hover td{background:#f7faf8}
 .tag{display:inline-block;padding:1px 6px;border-radius:6px;font-size:9.5px;font-weight:600;margin-right:2px}
 .t-mel{background:#dbeafe;color:#1d4ed8}.t-whi{background:#ccfbf1;color:#0e7490}.t-syd{background:#fee2e2;color:#991b1b}.t-fly{background:#fef3c7;color:#b45309}
-.day-h{padding:12px 20px;border-radius:10px;margin-bottom:10px;color:#fff;font-weight:700;font-size:14px}
+.day-h{padding:12px 20px;border-radius:10px;margin-bottom:4px;color:#fff;font-weight:700;font-size:14px}
+.weather-bar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;padding:0 2px}
+.wb{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;background:#f1f5f9;border-radius:14px;font-size:11px;font-weight:500;color:#475569}
 .dh-mel{background:linear-gradient(135deg,#1e3a5f,#2563eb)}.dh-whi{background:linear-gradient(135deg,#0e7490,#06b6d4)}.dh-syd{background:linear-gradient(135deg,#7c2d12,#ea580c)}
 .day-table{margin-bottom:10px}
 .day-table th{background:#f1f5f9;color:#475569;font-size:10.5px}
@@ -92,17 +94,17 @@ tr:hover td{background:#f7faf8}
 <div class="sec" id="overview">
   <h2><span onclick="document.getElementById('mapModal').style.display='flex'" style="cursor:pointer;background:#d1fae5;padding:2px 8px;border-radius:6px;font-size:14px" title="点击查看地图">🗺️</span> 路线 & 行程总览</h2>
   <table>
-    <thead><tr><th>日期</th><th>城市</th><th>交通</th><th>核心活动</th><th>住宿</th></tr></thead>
+    <thead><tr><th>日期</th><th>城市</th><th>天气</th><th>交通</th><th>核心活动</th><th>住宿</th></tr></thead>
     <tbody>
-      <tr><td><strong>5/1 周四</strong></td><td><span class="tag t-mel">墨尔本</span></td><td><span class="tag t-fly">✈️到达</span></td><td>14:10到达 → 市区打卡</td><td>🏠朋友家</td></tr>
-      <tr><td><strong>5/2 周五</strong></td><td><span class="tag t-mel">墨尔本</span></td><td>—</td><td>市区 / 植物园 / 南墨尔本市场</td><td>🏠朋友家</td></tr>
-      <tr><td><strong>5/3 周六</strong></td><td><span class="tag t-mel">墨尔本</span></td><td>—</td><td>自由安排（大洋路/St Kilda/休闲）</td><td>🏠朋友家</td></tr>
-      <tr><td><strong>5/4 周日</strong></td><td><span class="tag t-fly">✈️</span><span class="tag t-whi">圣灵群岛</span></td><td><span class="tag t-fly">✈️飞圣灵</span></td><td>飞圣灵 → Airlie Beach 休闲</td><td>Airlie Beach</td></tr>
-      <tr><td><strong>5/5 周一</strong></td><td><span class="tag t-whi">圣灵群岛</span></td><td>—</td><td><strong class="star">🪂 跳伞日！（不飞）</strong></td><td>Airlie Beach</td></tr>
-      <tr><td><strong>5/6 周二</strong></td><td><span class="tag t-whi">圣灵群岛</span></td><td>—</td><td><strong class="star">🛩️ 心形礁观光飞行</strong> + 🏖️ 白天堂海滩</td><td>Airlie Beach</td></tr>
-      <tr><td><strong>5/7 周三</strong></td><td><span class="tag t-whi">圣灵群岛</span></td><td>—</td><td><strong class="star">🐠 大堡礁出海浮潜！</strong></td><td>Airlie Beach</td></tr>
-      <tr><td><strong>5/8 周四</strong></td><td><span class="tag t-fly">✈️</span><span class="tag t-syd">悉尼</span></td><td><span class="tag t-fly">✈️飞悉尼</span></td><td>飞悉尼 → Bondi步道→Icebergs→Manly渡轮</td><td>悉尼</td></tr>
-      <tr><td><strong>5/9 周五</strong></td><td><span class="tag t-syd">悉尼</span></td><td><span class="tag t-fly">✈️回国</span></td><td>🎭歌剧院+海港大桥 → 购物 → 21:00回程</td><td>✈️飞机</td></tr>
+      <tr><td><strong>5/1 周四</strong></td><td><span class="tag t-mel">墨尔本</span></td><td>🌤 9~17°C</td><td><span class="tag t-fly">✈️到达</span></td><td>14:10到达 → 市区打卡</td><td>🏠朋友家</td></tr>
+      <tr><td><strong>5/2 周五</strong></td><td><span class="tag t-mel">墨尔本</span></td><td>🌤 9~17°C</td><td>—</td><td>市区 / 植物园 / 南墨尔本市场</td><td>🏠朋友家</td></tr>
+      <tr><td><strong>5/3 周六</strong></td><td><span class="tag t-mel">墨尔本</span></td><td>🌤 9~18°C</td><td>—</td><td>自由安排（大洋路/St Kilda/休闲）</td><td>🏠朋友家</td></tr>
+      <tr><td><strong>5/4 周日</strong></td><td><span class="tag t-fly">✈️</span><span class="tag t-whi">圣灵群岛</span></td><td>☀️ 19~26°C</td><td><span class="tag t-fly">✈️飞圣灵</span></td><td>飞圣灵 → Airlie Beach 休闲</td><td>Airlie Beach</td></tr>
+      <tr><td><strong>5/5 周一</strong></td><td><span class="tag t-whi">圣灵群岛</span></td><td>☀️ 19~26°C</td><td>—</td><td><strong class="star">🪂 跳伞日！（不飞）</strong></td><td>Airlie Beach</td></tr>
+      <tr><td><strong>5/6 周二</strong></td><td><span class="tag t-whi">圣灵群岛</span></td><td>☀️ 18~26°C</td><td>—</td><td><strong class="star">🛩️ 心形礁观光飞行</strong> + 🏖️ 白天堂海滩</td><td>Airlie Beach</td></tr>
+      <tr><td><strong>5/7 周三</strong></td><td><span class="tag t-whi">圣灵群岛</span></td><td>☀️ 18~25°C</td><td>—</td><td><strong class="star">🐠 大堡礁出海浮潜！</strong></td><td>Airlie Beach</td></tr>
+      <tr><td><strong>5/8 周四</strong></td><td><span class="tag t-fly">✈️</span><span class="tag t-syd">悉尼</span></td><td>🌤 12~20°C</td><td><span class="tag t-fly">✈️飞悉尼</span></td><td>飞悉尼 → Bondi步道→Icebergs→Manly渡轮</td><td>悉尼</td></tr>
+      <tr><td><strong>5/9 周五</strong></td><td><span class="tag t-syd">悉尼</span></td><td>🌤 11~19°C</td><td><span class="tag t-fly">✈️回国</span></td><td>🎭歌剧院+海港大桥 → 购物 → 21:00回程</td><td>✈️飞机</td></tr>
     </tbody>
   </table>
 </div>
@@ -138,6 +140,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 1 -->
 <div class="sec" id="day1">
   <div class="day-h dh-mel">Day 1 · 5/1（周四）· 墨尔本到达</div>
+  <div class="weather-bar"><span class="wb">🌤 9~17°C</span><span class="wb">🌧 40%降雨</span><span class="wb">🧥 外套+长裤+薄毛衣，早晚凉</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">14:10</td><td>✈️ 抵达 MEL</td><td>入境取行李 → SkyBus 30min → 109轻轨到 Port Melbourne 朋友家</td><td>$19.75</td></tr>
     <tr><td class="tc">16:30</td><td>🎨 涂鸦巷</td><td>Hosier Lane → Flinders Station → 联邦广场。和朋友会合一起逛！</td><td>免费</td></tr>
@@ -149,6 +152,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 2 -->
 <div class="sec" id="day2">
   <div class="day-h dh-mel">Day 2 · 5/2（周五）· 墨尔本市区</div>
+  <div class="weather-bar"><span class="wb">🌤 9~17°C</span><span class="wb">🌧 40%降雨</span><span class="wb">🧥 外套+长裤，带伞备用</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">09:00</td><td>☕ 南墨尔本市场</td><td>离朋友家很近！dim sim + 咖啡 + 逛鲜花水果摊</td><td>~$10-20</td></tr>
     <tr><td class="tc">10:30</td><td>🌿 皇家植物园</td><td>秋季落叶美景，免费散步</td><td>免费</td></tr>
@@ -161,6 +165,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 3 -->
 <div class="sec" id="day3">
   <div class="day-h dh-mel">Day 3 · 5/3（周六）· 墨尔本自由日</div>
+  <div class="weather-bar"><span class="wb">🌤 9~18°C</span><span class="wb">🌧 45%降雨</span><span class="wb">🧥 外套+舒适走路鞋，墨尔本天气多变</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">全天</td><td>🏖️ 自由安排</td><td>选项 A：大洋路一日游（十二使徒岩，~¥500-700/人）<br>选项 B：St Kilda Beach + Brighton 彩虹小屋<br>选项 C：Port Melbourne 附近闲逛、海边散步、和朋友叙旧</td><td>看选择</td></tr>
   </tbody></table>
@@ -173,6 +178,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 4 -->
 <div class="sec" id="day4">
   <div class="day-h dh-whi">Day 4 · 5/4（周日）· ✈️飞圣灵群岛</div>
+  <div class="weather-bar"><span class="wb">☀️ 19~26°C</span><span class="wb">💧 20%降雨</span><span class="wb">👕 短袖+薄外套，到了换短裤拖鞋！热带天气</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">08:00</td><td>出发去机场</td><td>SkyBus 到 MEL</td><td>$19.75/人</td></tr>
     <tr><td class="tc">10:00</td><td>✈️ 飞PPP</td><td>Jetstar ~2.5h</td><td>¥500-800/人</td></tr>
@@ -193,6 +199,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 5: SKYDIVE -->
 <div class="sec" id="day5">
   <div class="day-h dh-whi">Day 5 · 5/5（周一）· 🪂 跳伞日！⚠️不飞</div>
+  <div class="weather-bar"><span class="wb">☀️ 19~26°C</span><span class="wb">💧 20%降雨</span><span class="wb">👟 运动鞋+运动服跳伞，下午换短袖短裤</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">07:30</td><td><strong class="star">🪂 集合</strong></td><td>Skydive Australia 报到 → 培训穿装备</td><td>—</td></tr>
     <tr><td class="tc">08:30</td><td><strong class="star">🪂 15,000ft！</strong></td><td>两人一起跳！60秒自由落体220km/h → 俯瞰74座岛屿+珊瑚海</td><td><strong>$349/人</strong></td></tr>
@@ -216,6 +223,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 6: SCENIC + WHITEHAVEN -->
 <div class="sec" id="day6">
   <div class="day-h dh-whi">Day 6 · 5/6（周二）· 🛩️ 心形礁 + 白天堂海滩</div>
+  <div class="weather-bar"><span class="wb">☀️ 18~26°C</span><span class="wb">💧 25%降雨</span><span class="wb">👙 泳衣+防晒衣+墨镜+拖鞋，涂SPF50+</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">08:00</td><td><strong class="star">🛩️ 观光飞行 65min</strong></td><td>74座岛屿 → 白天堂 → Hill Inlet → <strong>❤️心形礁</strong> → 大堡礁<br>每个座位靠窗！含酒店接送</td><td><strong>$299-350/人</strong></td></tr>
     <tr><td class="tc">09:30</td><td>休整换装</td><td>回酒店换沙滩装</td><td>—</td></tr>
@@ -228,6 +236,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 7: GBR -->
 <div class="sec" id="day7">
   <div class="day-h dh-whi">Day 7 · 5/7（周三）· 🐠 大堡礁出海浮潜</div>
+  <div class="weather-bar"><span class="wb">☀️ 18~25°C</span><span class="wb">🌊 水温25°C</span><span class="wb">👙 泳衣+速干衣+防晒霜，船上有风带薄外套</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">08:00</td><td><strong class="star">🚢 大堡礁出海</strong></td><td>Cruise Whitsundays 等外堡礁一日游。从 Airlie Beach 出发</td><td><strong>$230-289/人</strong></td></tr>
     <tr><td class="tc">10:30</td><td><strong class="star">🤿 浮潜！</strong></td><td>水温25°C·能见度佳·珊瑚+小丑鱼+海龟 🐢 两人一起潜！</td><td>含内</td></tr>
@@ -245,6 +254,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 8 -->
 <div class="sec" id="day8">
   <div class="day-h dh-syd">Day 8 · 5/8（周四）· ✈️飞悉尼 · 海滩日</div>
+  <div class="weather-bar"><span class="wb">🌤 12~20°C</span><span class="wb">🌧 35%降雨</span><span class="wb">🧥 外套+长裤+运动鞋走步道，海边风大</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">07:00</td><td>✈️ 飞悉尼</td><td>PPP→SYD ~4-5h（可能转机）</td><td>¥600-1000/人</td></tr>
     <tr><td class="tc">12:00</td><td>入住悉尼</td><td>Airport Link到市区，放行李</td><td>$18.70</td></tr>
@@ -266,6 +276,7 @@ tr:hover td{background:#f7faf8}
 <!-- DAY 9 -->
 <div class="sec" id="day9">
   <div class="day-h dh-syd">Day 9 · 5/9（周五）· 🎭歌剧院 + ✈️回程</div>
+  <div class="weather-bar"><span class="wb">🌤 11~19°C</span><span class="wb">🌧 30%降雨</span><span class="wb">🧥 外套+舒适鞋走桥，飞机上穿长裤保暖</span></div>
   <table class="day-table"><thead><tr><th class="tc">时间</th><th>活动</th><th>详情</th><th style="width:90px">费用</th></tr></thead><tbody>
     <tr><td class="tc">09:00</td><td>退房寄行李</td><td>—</td><td>—</td></tr>
     <tr><td class="tc">09:30</td><td><strong>🎭 歌剧院</strong></td><td>外观拍照 + 推荐内部Tour($43)</td><td>免费/$43</td></tr>
